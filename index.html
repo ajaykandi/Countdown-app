@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@300&family=Open+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+    <title>Countdown for Bigday</title>
+</head>
+
+<body>
+    <div class="countdown-container">
+        <div class="days tilt">
+            <p class="bigtext" id="days">0</p>
+            <span class="text">Days</span>
+        </div>
+        <div class="hours tilt">
+            <p class="bigtext" id="hours">0</p>
+            <span class="text">Hours</span>
+        </div>
+        <div class="minutes tilt">
+            <p class="bigtext" id="minutes">0</p>
+            <span class="text">Minutes</span>
+        </div>
+        <div class="seconds tilt">
+            <p class="bigtext" id="seconds">0</p>
+            <span class="text">Seconds</span>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 25,
+            speed: 400,
+            glare: true
+        });
+        
+        //It also supports NodeList
+        //VanillaTilt.init(document.querySelectorall(".tilt"))
+    </script>
+
+</body>
+
+</html>

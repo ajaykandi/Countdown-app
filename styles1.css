@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    background-color: black;
+    background: url("bg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: green;
+    min-height: 100vh;
+    font-family: 'Imbue', serif;
+    
+    
+}
+body::before{
+    /* background-color: rgba(250, 250, 250, 0.3); */
+}
+.countdown-container{
+    display: flex
+
+}
+.text{
+    font-size: 30px;
+
+}
+
+.bigtext{
+    font-size: 7rem;
+    margin: 10px 55px;
+    
+    
+}
